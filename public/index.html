@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Hunt Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎨 Color Hunt Game</h1>
+
+  <div id="namePrompt">
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+    <button onclick="submitName()">Join Game</button>
+  </div>
+
+  <div id="gameArea" style="display: none;">
+    <h2 id="prompt">Waiting for game to start...</h2>
+    <div id="buttons"></div>
+    <h3>🏆 Scoreboard</h3>
+    <ul id="scoreboard"></ul>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
